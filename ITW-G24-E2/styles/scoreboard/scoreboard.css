@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import "../small-screen.css" screen and (max-width: 710px);
+@import "../main.css";
+
+/*Grupo: 24, (Número: 54600, Nome: João Ferreira, PL: 26),(Número: 54356, Nome:Judite Ramos, PL: 26),(Número: 51660, Nome:João Torres, PL: 26)*/
+
+
+body {
+  background-color: lightgray;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: black;
+  display:inline-block;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  display:inline-block;
+  margin: 0px 8px 10px 8px; 
+  color: gray;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+
+  margin: 0px 8px 10px 8px; 
+  color: black;
+  position: relative;
+}
+
+h1{
+  margin-top: 13%;
+}
+
+
+th, td {
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;  
+}
+
+#tabela {
+  padding: 20px;
+  justify-content: center;
+  margin: auto auto;
+  width: 45%;
+}
+
+
+#tabela > table {
+  position: relative;
+  float: left;
+  padding: 30px;
+  align-items: center;
+
+}
+
+
+th,td:hover {
+  background-color: rgb(153, 152, 152);
+  cursor:default;
+}
+
+
+  
+.frame {
+  z-index: 9999;
+  position: fixed;
+}
+  
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+      
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+        }
+}
+      
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+        }
+}
+      
+      
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+      
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+      
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+      
+      
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+      
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+      
+.fadeIn.fourth, #fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@media screen and (min-width: 710px) {
+  #more{
+    display:none
+  }
+}

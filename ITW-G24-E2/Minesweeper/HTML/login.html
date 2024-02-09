@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Grupo: 24, (Número: 54600, Nome: João Ferreira, PL: 26),(Número: 54356, Nome:Judite Ramos, PL: 26),(Número: 51660, Nome:João Torres, PL: 26)  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/login/login.css" rel="stylesheet">
+
+    <script src="../../scripts/login.js"></script>
+    <title>Login</title>
+</head>
+    <body>
+        <div class="frame">
+            <nav>
+                <div class="dropdown">
+                    <div class="dropbtn">
+                <a class="custom-btn btn-7" id="more"><span>More</span></a>
+                <span class="dropcontent">
+                <a class="custom-btn btn-7" href="../HTML/home.html"><span>Home</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/login.html"><span>Login</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/info.html"><span>How to Play</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/scores.html"><span>Scoreboards</span></a>
+                
+            </span>
+            </div>
+        </div>
+    </div>
+            </nav>
+        <h1>minesweeper</h1>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+            
+                <h2 class="active"> Sign In </h2>  
+                <form onsubmit="return loginAgora()" action="../HTML/game.html">
+                    <input type="text" id="loginNow" class="fadeIn second" name="login" placeholder="Login" required>
+                    <input type="password" id="passwordNow" class="fadeIn third" name="login" placeholder="Password" required>
+                    <button type="submit" id="LoginButton" class="fadeIn fourth" >Login</button>
+                </form>
+                <div id="formFooter">
+                    <a class="underlineHover" href="../HTML/registo.html">Create account</a>
+                    <p>
+                    <a class="underlineHover" href="../HTML/forgotlogin.html">Forgot Password?</a>
+                    </p>
+                    <p>
+                    <a class="underlineHover" href="../HTML/home.html"> BACK </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

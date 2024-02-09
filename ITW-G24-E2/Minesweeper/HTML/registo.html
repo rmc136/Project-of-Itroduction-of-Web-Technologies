@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Grupo: 24, (Número: 54600, Nome: João Ferreira, PL: 26),(Número: 54356, Nome:Judite Ramos, PL: 26),(Número: 51660, Nome:João Torres, PL: 26)  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/login/login.css" rel="stylesheet">
+    <script src="../../scripts/login.js"></script>
+    <title>Registo</title>
+</head>
+    <body>
+        <div class="frame">
+            <nav>
+                <div class="dropdown">
+                    <div class="dropbtn">
+                <a class="custom-btn btn-7" id="more"><span>More</span></a>
+                <span class="dropcontent">
+                <a class="custom-btn btn-7" href="../HTML/home.html"><span>Home</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/login.html"><span>Login</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/info.html"><span>How to Play</span></a>
+                <a  class="custom-btn btn-7" href="../HTML/scores.html"><span>Scoreboards</span></a>
+                
+            </span>
+            </div>
+        </div>
+            </nav>
+        </div>
+        <h1>minesweeper</h1>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+            
+                <h2 class="active"> Sign Up </h2>  
+                <form onsubmit="return savePlayerHistory()" action="../HTML/login.html">
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="Choose your Username" required>
+                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Choose your password" required>
+                    <button type="submit" id="LoginButton" class="fadeIn fourth">Create account</button>
+                </form>
+                <div id="formFooter">
+                    <p>
+                    <a class="underlineHover" href="../HTML/home.html"> BACK </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

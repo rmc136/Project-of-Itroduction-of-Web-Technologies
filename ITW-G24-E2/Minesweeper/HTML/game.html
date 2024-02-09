@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Grupo: 24, (Número: 54600, Nome: João Ferreira, PL: 26),(Número: 54356, Nome:Judite Ramos, PL: 26),(Número: 51660, Nome:João Torres, PL: 26)  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/game/game.css" rel="stylesheet">
+	<script src="../../scripts/mine.js"></script>
+	<script src="../../scripts/script.js" ></script>
+	<script src="../../scripts/login.js" ></script>
+    <title>Game page</title>
+</head>
+<body>
+	<div class="frame">
+		<nav>
+			<div class="dropdown">
+				<div class="dropbtn">
+			<a class="custom-btn btn-7" id="more"><span>More</span></a>
+			<span class="dropcontent">
+			<a class="custom-btn btn-7" href="../HTML/home.html"><span>Home</span></a>
+			<a  class="custom-btn btn-7" href="../HTML/login.html"><span>Login</span></a>
+			<a  class="custom-btn btn-7" href="../HTML/info.html"><span>How to Play</span></a>
+			<a  class="custom-btn btn-7" href="../HTML/scores.html"><span>Scoreboards</span></a>
+			
+		</span>
+		</div>
+	</div>
+</nav>
+	</div>
+	<h1>Minesweeper</h1>
+    <div class="gamemode">
+        <button class="float" id="btn_sp"> SinglePlayer </button>
+    </div>
+    <div class="levels">
+        <button class="float" id="btn_easy"> Easy </button>
+        <button class="float" id="btn_medium"> Normal </button>
+        <button class="float" id="btn_hard"> Hard </button>
+    </div>
+    <div class="start">
+        <button class="float" id="btn_start"> Start </button>
+    </div>
+	<br>
+	<div class="time">Time: <span id="timer">0</span> seconds</div>
+	<div class="text">Mines Left: <span data-mine-count> 0</span></div>
+    <br>
+	<audio id="reveal" src="../sound/reveal.mp3"></audio>
+	<audio id="win" src="../sound/win.mp3"></audio>
+	<audio id="lose" src="../sound/lose.wav"></audio>
+	<div class="game">
+    <div id="board" class="board"></div>
+	</div>
+    <br>
+<div class="restart">
+	<button class="float" id="btn_restart"> Restart </button>
+</div>
+<div id="footer">
+	<a class= "underlineHover" href="../HTML/home.html" style="font-size: 25px;"><b>BACK</b></a>
+</div>
+</body>
+</html>
